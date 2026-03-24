@@ -68,3 +68,74 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+##### ADRIANA'S NOTES #####
+
+Chorebear/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/          # Shared/reusable components
+│   │   ├── Navbar.jsx
+│   │   └── ProtectedRoute.jsx
+│   │
+│   ├── pages/               # One folder per screen in Figma
+│   │   ├── Landing/
+│   │   │   ├── Landing.jsx
+│   │   │   └── Landing.css
+│   │   ├── Login/
+│   │   │   ├── Login.jsx
+│   │   │   └── Login.css
+│   │   ├── CreateAccount/
+│   │   │   ├── CreateAccount.jsx
+│   │   │   └── CreateAccount.css
+│   │   ├── JoinOrCreateHome/
+│   │   │   ├── JoinOrCreateHome.jsx
+│   │   │   └── JoinOrCreateHome.css
+│   │   ├── JoinHome/
+│   │   │   ├── JoinHome.jsx
+│   │   │   └── JoinHome.css
+│   │   ├── CreateHome/
+│   │   │   ├── CreateHome.jsx
+│   │   │   └── CreateHome.css
+│   │   ├── JoinCreateSuccess/
+│   │   │   ├── JoinCreateSuccess.jsx
+│   │   │   └── JoinCreateSuccess.css
+│   │   ├── Dashboard/               
+│   │   │   ├── Dashboard.jsx
+│   │   │   └── Dashboard.css
+│   │   ├── HouseChat/
+│   │   │   ├── HouseChat.jsx
+│   │   │   └── HouseChat.css
+│   │   ├── AddAssignChores/
+│   │   │   ├── AddAssignChores.jsx
+│   │   │   └── AddAssignChores.css
+│   │   ├── EditSpecificChore/
+│   │   │   ├── EditSpecificChore.jsx
+│   │   │   └── EditSpecificChore.css
+│   │   ├── CreateNewChore/
+│   │   │   ├── CreateNewChore.jsx
+│   │   │   └── CreateNewChore.css
+│   │   ├── EditMyHomes/
+│   │   │   ├── EditMyHomes.jsx
+│   │   │   └── EditMyHomes.css
+│   │   ├── SelectHomeForEdit/
+│   │   │   ├── SelectHomeForEdit.jsx
+│   │   │   └── SelectHomeForEdit.css
+│   │   ├── Homes/
+│   │   │   ├── Homes.jsx
+│   │   │   └── Homes.css
+│   │   └── Settings/                
+│   │       ├── Settings.jsx
+│   │       └── Settings.css
+│   │
+│   ├── context/             # Global state (e.g. logged-in user, current home)
+│   │   └── AuthContext.jsx
+│   │
+│   ├── App.jsx              # All routes defined here
+│   ├── App.css
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
