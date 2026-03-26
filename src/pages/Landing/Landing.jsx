@@ -16,15 +16,16 @@ export default function Landing() {
       return;
     }
 
-    navigate("/Landing", { state: { username } });
+    navigate("/Dashboard", { state: { username } });
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#d8c7b3]">
       <div className="w-full max-w-md text-center px-6">
-        
-        <h1 className="text-4xl md:text-5xl font-semibold text-[#5a4336] mb-10">
-          welcome back!
+
+        <img src={require("../../logo.png")} alt="chorebear logo" className="h-35 w-auto mx-auto mb-4" />        
+        <h1 className="text-4xl md:text-5xl font-itim text-[#5a4336] mb-10">
+          chorebear
         </h1>
 
         <form onSubmit={handleLogin} className="space-y-6">
