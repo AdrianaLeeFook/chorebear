@@ -19,7 +19,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import SelectHomeForEdit   from "./pages/SelectHomeForEdit/SelectHomeForEdit";
 // import Homes               from "./pages/Homes/Homes";
 
-// ─── Your Pages (already active) ─────────────────────────────────────────────
+
 import Dashboard  from "./pages/Dashboard/Dashboard";
 import Settings   from "./pages/Settings/Settings";
 import Navbar     from "./components/Navbar";
@@ -36,7 +36,7 @@ const Placeholder = ({ name }) => (
 function App() {
   return (
     <Router>
-      {/* Navbar renders on every page — built by your teammate */}
+      
       <Navbar />
 
       <Routes>
