@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 //temporary
-const mockUser = { name: "jim" };
+const mockUser = { name: "billy" };
 const mockHouse = { name: "the la casa house" };
 
 const tempHomeList = [
