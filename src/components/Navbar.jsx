@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Hide navbar on pre-login pages
-  const hideOn = ["/", "/login", "/create-account", "/join-or-create", "/join-home", "/create-home", "/home-ready"];
+  const hideOn = ["/", "/Landing", "/CreateAccount", "/JoinOrCreateHome", "/JoinHome", "/CreateHome", "/JoinCreateSuccess"];
   if (hideOn.includes(location.pathname)) return null;
 
   const navLinks = [
@@ -23,7 +23,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link to="/dashboard" className="flex flex-row items-center gap-2 group">
-          <span className="text-xl">🐻</span>
+          <img src={require("../logo.png")} alt="chorebear logo" className="h-8 w-auto" />
           <span className="text-[#6b4f3a] font-semibold text-base tracking-wide group-hover:text-[#4e3728] transition-colors">
             chorebear
           </span>
