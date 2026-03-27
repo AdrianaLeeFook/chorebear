@@ -4,13 +4,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // ─── Page Imports ────────────────────────────────────────────────────────────
 // Each teammate should uncomment their import once their page is built.
 
-// import Landing             from "./pages/Landing/Landing";
-// import Login               from "./pages/Login/Login";
-// import CreateAccount       from "./pages/CreateAccount/CreateAccount";
-// import JoinOrCreateHome    from "./pages/JoinOrCreateHome/JoinOrCreateHome";
-// import JoinHome            from "./pages/JoinHome/JoinHome";
-// import CreateHome          from "./pages/CreateHome/CreateHome";
-// import JoinCreateSuccess   from "./pages/JoinCreateSuccess/JoinCreateSuccess";
+import Landing             from "./pages/Landing/Landing";
+import CreateAccount       from "./pages/CreateAccount/CreateAccount";
+import JoinOrCreateHome    from "./pages/JoinOrCreateHome/JoinOrCreateHome";
+import JoinHome            from "./pages/JoinHome/JoinHome";
+import CreateHome          from "./pages/CreateHome/CreateHome";
+import JoinCreateSuccess   from "./pages/JoinCreateSuccess/JoinCreateSuccess";
 // import HouseChat           from "./pages/HouseChat/HouseChat";
 // import AddAssignChores     from "./pages/AddAssignChores/AddAssignChores";
 // import EditSpecificChore   from "./pages/EditSpecificChore/EditSpecificChore";
@@ -23,6 +22,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard  from "./pages/Dashboard/Dashboard";
 import Settings   from "./pages/Settings/Settings";
 import Navbar     from "./components/Navbar";
+
 
 // ─── Placeholder component for unbuilt pages ─────────────────────────────────
 const Placeholder = ({ name }) => (
@@ -41,15 +41,15 @@ function App() {
 
       <Routes>
         {/* ── Public routes (no auth needed) ── */}
-        <Route path="/"               element={<Placeholder name="Landing" />} />
-        <Route path="/login"          element={<Placeholder name="Login" />} />
-        <Route path="/create-account" element={<Placeholder name="Create Account" />} />
+        <Route path="/"               element={<Landing />} />
+        <Route path="/Landing" element={<Landing />} />
+        <Route path="/CreateAccount"       element={<CreateAccount/>} />
 
         {/* ── Onboarding flow ── */}
-        <Route path="/join-or-create" element={<Placeholder name="Join or Create Home" />} />
-        <Route path="/join-home"      element={<Placeholder name="Join Home" />} />
-        <Route path="/create-home"    element={<Placeholder name="Create Home" />} />
-        <Route path="/home-ready"     element={<Placeholder name="Join/Create Success" />} />
+        <Route path="/join-or-create" element={<JoinOrCreateHome />} />
+        <Route path="/join-home"      element={<JoinHome />} />
+        <Route path="/create-home"    element={<CreateHome />} />
+        <Route path="/home-ready"     element={<JoinCreateSuccess />} />
 
         {/* ── Main app routes ── */}
         <Route path="/dashboard"      element={<Dashboard />} />
