@@ -34,7 +34,7 @@ export default function JoinHome() {
 
     setError("");
 
-    navigate("/home-ready", {
+    navigate("/JoinCreateSuccess", {
       state: {
         type: "join",
         code: finalCode,

@@ -38,7 +38,7 @@ export default function JoinCreateSuccess() {
         )}
 
         <button
-          onClick={() => navigate("/dashboard")}
+          onClick={() => navigate("/Dashboard")}
           className="w-[250px] h-[68px] rounded-[18px] bg-[#aab095] text-[#43332c] text-[2rem] leading-none hover:brightness-[0.98] active:translate-y-[1px] transition"
           style={{ fontFamily: '"Trebuchet MS", "Segoe UI", sans-serif' }}
         >

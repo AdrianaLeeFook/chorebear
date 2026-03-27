@@ -17,7 +17,7 @@ export default function CreateAccount() {
       return;
     }
 
-    navigate("/Landing", { state: { username } });
+    navigate("/JoinOrCreateHome", { state: { username } });
   };
 
   return (

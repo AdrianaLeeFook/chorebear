@@ -46,10 +46,10 @@ function App() {
         <Route path="/CreateAccount"       element={<CreateAccount/>} />
 
         {/* ── Onboarding flow ── */}
-        <Route path="/join-or-create" element={<JoinOrCreateHome />} />
-        <Route path="/join-home"      element={<JoinHome />} />
-        <Route path="/create-home"    element={<CreateHome />} />
-        <Route path="/home-ready"     element={<JoinCreateSuccess />} />
+        <Route path="/JoinOrCreateHome" element={<JoinOrCreateHome />} />
+        <Route path="/JoinHome"      element={<JoinHome />} />
+        <Route path="/CreateHome"    element={<CreateHome />} />
+        <Route path="/JoinCreateSuccess"     element={<JoinCreateSuccess />} />
 
         {/* ── Main app routes ── */}
         <Route path="/dashboard"      element={<Dashboard />} />

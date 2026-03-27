@@ -25,7 +25,7 @@ export default function JoinOrCreateHome() {
         <div className="flex flex-col items-center gap-6 w-full">
           
           <button
-            onClick={() => navigate("/create-home")}
+            onClick={() => navigate("/CreateHome")}
             className="w-[320px] h-[74px] rounded-[22px] bg-[#aab095] text-[#43332c] text-[2rem] leading-none border border-[rgba(90,62,54,0.25)] hover:brightness-[0.98] active:translate-y-[1px] transition"
             style={{ fontFamily: '"Trebuchet MS", "Segoe UI", sans-serif' }}
           >
@@ -33,7 +33,7 @@ export default function JoinOrCreateHome() {
           </button>
 
           <button
-            onClick={() => navigate("/join-home")}
+            onClick={() => navigate("/JoinHome")}
             className="w-[320px] h-[74px] rounded-[22px] bg-[#aab095] text-[#43332c] text-[2rem] leading-none border border-[rgba(90,62,54,0.25)] hover:brightness-[0.98] active:translate-y-[1px] transition"
             style={{ fontFamily: '"Trebuchet MS", "Segoe UI", sans-serif' }}
           >

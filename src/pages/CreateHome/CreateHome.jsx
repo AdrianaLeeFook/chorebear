@@ -17,7 +17,7 @@ export default function CreateHome() {
 
     setError("");
 
-    navigate("/home-ready", {
+    navigate("/JoinCreateSuccess", {
       state: {
         type: "create",
         homeName,
